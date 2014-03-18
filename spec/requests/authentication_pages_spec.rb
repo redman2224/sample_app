@@ -113,10 +113,10 @@ describe "AuthenticationPages" do
 
       before { sign_in non_admin, no_capybara: true }
 
-      describe "submitting a DELETE request to the Users#destroy action" do
-        before { delete user_path(user) }
-        specify { expect(response).to redirect_to(root_url) }
-      end
+      # describe "submitting a DELETE request to the Users#destroy action" do
+      #   before { delete user_path(user) }
+      #   specify { expect(response).to redirect_to(root_url) }
+      # end
     end
   end
 end
